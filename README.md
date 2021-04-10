@@ -1,2 +1,2 @@
-# Web Dev TA CB
+# Web Dev TA Coding Blocks
 Assignments
