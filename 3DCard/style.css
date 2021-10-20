@@ -1,0 +1,39 @@
+div {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+section {
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+
+.side-a{
+    background-color: lightcoral;
+    z-index: 2;
+}
+
+.side-b{
+    background-color: lightgreen;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.side-a,
+.side-b {
+    position: absolute;
+    backface-visibility:hidden;
+}
+
+.wrapper{
+    transition: 1s;
+    transform-style:preserve-3d;
+}
+
+.wrapper:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
